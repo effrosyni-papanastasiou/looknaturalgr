@@ -250,8 +250,8 @@
     align-items: center;
     margin: 0 auto 0 auto;
     height: 100%;
-    max-width: 9.125rem;
-    width: 40%;
+    max-width: 13.75rem;
+    width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
