@@ -701,7 +701,12 @@
   #cs-top-bar .cs-nav-button {
     position: absolute;
     display: flex;
-    right: 15%;
+    right: 2rem;
+  }
+  #cs-top-bar .cs-menu {
+    position: absolute;
+    display: flex;
+    left: 2rem;
   }
   #cs-top-bar .cs-logo {
     z-index: 100;
@@ -767,6 +772,9 @@
     list-style: none;
     /* prevent flexbox from squishing it */
     flex: none;
+  }
+  #cs-navigation .cs-li.cs-secretary {
+    color: #8B5035 !important;
   }
   #cs-navigation .cs-li-link {
     position: relative;

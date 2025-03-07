@@ -486,6 +486,8 @@
         }
 
         .cs-li {
+           
+
             opacity: 0;
             /* transition from these values */
             transform: translateX(calc(-40 / 16 * 1rem));
@@ -856,7 +858,13 @@
         .cs-nav-button {
             position: absolute;
             display: flex;
-            right: 15%;
+            right: 2rem;
+        }
+
+        .cs-menu {
+            position: absolute;
+            display: flex;
+            left: 2rem;
         }
 
         .cs-logo {
@@ -935,6 +943,9 @@
             list-style: none;
             /* prevent flexbox from squishing it */
             flex: none;
+           &.cs-secretary  {
+                color: #8B5035 !important;
+            }
         }
 
         .cs-li-link {
