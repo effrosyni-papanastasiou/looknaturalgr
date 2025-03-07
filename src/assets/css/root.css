@@ -263,6 +263,9 @@
   #cs-top-bar .cs-button-solid {
     display: none;
   }
+  #cs-nav-bar {
+    display: none;
+  }
   #cs-navigation {
     z-index: 10000;
     background-color: var(--secondary);
@@ -679,6 +682,9 @@
     padding: 1rem 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
+  #cs-top-bar .cs-nav {
+    display: none;
+  }
   #cs-top-bar .cs-container {
     display: flex;
     justify-content: center;
@@ -711,6 +717,9 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
     object-position: center;
+  }
+  #cs-nav-bar {
+    display: block;
   }
   #cs-navigation {
     z-index: 10000;
