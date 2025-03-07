@@ -532,14 +532,6 @@
 
         .cs-card {
             max-width: (630/16rem);
-            .cs-text {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-title,
-            .cs-topper {
-                color: var(--bodyTextColorWhite);
-            }
         }
 
         .cs-content {
@@ -551,7 +543,7 @@
             padding: clamp(2.5rem, 5.8vw, 5rem) clamp(2rem, 5.8vw, 4.5rem);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
-            background: var(--primary);
+            background: var(--babyBlue);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
@@ -580,6 +572,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            border-top: 1px solid var(--primary);
             border-bottom: 1px solid var(--primary);
             .cs-text {
                 color: var(--primary);
