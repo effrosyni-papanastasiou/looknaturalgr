@@ -248,31 +248,20 @@
     }
 }
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #steps {
-        background-color: var(--beigeColor);
-        padding: (40/16rem) 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 /*-- -------------------------- -->
-<---     Individual Steps          -->
+<---     Steps-reverse          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #step-r {
-        // padding: (20/16rem) (16/16rem);
+    #steps-r {
+        padding: (40/16rem) (16/16rem);
+        background-color: var(--beigeColor);
         position: relative;
         z-index: 1;
 
         .cs-container {
-            box-shadow: rgb(20 20 58 / 20%) 0px 5px (10/16rem) ;
+            box-shadow: rgb(20 20 58 / 20%) 0px 5px 40px;
             background-color: var(--beigeColor);
             width: 100%;
             max-width: (1280/16rem);
@@ -280,7 +269,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            flex-direction: column-reverse;
         }
 
         .cs-content {
@@ -326,14 +314,14 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #step-r {
+    #steps-r {
         /* 90px - 150px */
         /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
 
         .cs-container {
             max-width: (1270/16rem);
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: flex-end;
             /* 48px - 64px */
             // gap: clamp(3rem, 6vw, 4rem);
             position: relative;
@@ -342,18 +330,15 @@
 
         .cs-content {
             width: 100%;
-            padding: unset;
             max-width: (563/16rem);
             /* 32px - 90px */
-            // padding: 0 (30/16rem);
-            padding-left: (80/16rem);
-            // margin-right: (80/16rem);
+            padding: 0 (30/16rem);
         }
 
         .cs-picture {
             z-index: 1;
             width: 50%;
-            margin-left: (72/16rem);
+            margin-left: (0/16rem);
             
             img {
                 position: relative;
@@ -369,16 +354,18 @@
 }
      
 /*-- -------------------------- -->
-<---      Individual Steps      -->
+<---          Steps             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #step {
+    #steps {
+        background-color: var(--beigeColor);
         position: relative;
         z-index: 1;
+
         .cs-container {
-            box-shadow: rgb(20 20 58 / 20%) 0px 5px (10/16rem);
+            box-shadow: rgb(20 20 58 / 20%) 0px 5px 40px;
             background-color: var(--babyBlue);
             width: 100%;
             max-width: (1280/16rem);
@@ -401,7 +388,6 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
-
         }
 
         .cs-text {
@@ -433,10 +419,10 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #step {
+    #steps {
         /* 90px - 150px */
         /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
-        padding: (20/16rem) (16/16rem);
+        padding: (40/16rem) (16/16rem);
 
         .cs-container {
             max-width: (1270/16rem);

@@ -5,18 +5,23 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #001f3f;
-    --secondaryLight: #001f3f;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
+    --primary: #14143A;
+    --primaryLight: #14143A;
+    --secondary: #CF987E;
+    --secondaryLight: #CF987E;
+    --headerColor: #14143A;
+    --bodyTextColor: #14143A;
+    --bodyTextColorWhite: #FFFBF8;
+    --babyBlue: #D5ECFF;
+    --white: #FFFBF8;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 2.25rem);
+    --header2FontSize: clamp(1.8375rem, 3.9vw, 2rem);
+    --header3FontSize: clamp(1.5375rem, 3.9vw, 1.8rem);
     --bodyFontSize: 1rem;
+    --beigeColor: #FFF1EA;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
@@ -33,13 +38,21 @@
   }
   .cs-title {
     position: relative;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
     max-width: 43.75rem;
-    font-size: var(--headerFontSize);
     line-height: 1.2em;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--headerColor);
     text-align: inherit;
+  }
+  h1 {
+    font-size: var(--headerFontSize);
+  }
+  h2 {
+    font-size: var(--header2FontSize);
+  }
+  h3 {
+    font-size: var(--header3FontSize);
   }
   .cs-text {
     margin: 0;
@@ -55,14 +68,15 @@
     position: relative;
     display: inline-block;
     background-color: var(--primary);
+    min-width: 9.375rem;
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 1rem;
     line-height: 3.125em;
-    font-weight: bold;
-    color: #000;
+    font-weight: 400;
+    color: #fff;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
@@ -81,7 +95,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background-color: #000;
+    background-color: var(--secondary);
     height: 100%;
     width: 0;
     transition: width 0.3s;
@@ -106,7 +120,7 @@
     margin: 0;
     overflow-x: hidden;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
   }
@@ -131,8 +145,10 @@
   h4,
   h5,
   h6 {
+    font-family: "Roboto Mono", monospace;
     margin: 0;
     color: var(--headerColor);
+    letter-spacing: -1.5%;
   }
   p,
   li,
@@ -156,31 +172,30 @@
     left: 0;
     opacity: 0;
   }
-  /* roboto-regular - latin */
+  /* roboto-mono - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: "Manrope";
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+    src: local(""), url("/assets/fonts/Manrope-Regular.ttf") format("truetype"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/Manrope-Regular.ttf") format("truetype");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-700 - latin */
+  /* roboto-mono - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 700;
+    font-family: "Roboto Mono";
+    font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
+    src: local(""), url("/assets/fonts/RobotoMono-Regular.ttf") format("truetype"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/RobotoMono-Regular.ttf") format("truetype");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-900 - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
+    font-family: "Roboto Mono";
+    font-weight: 600;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+    src: local(""), url("/assets/fonts/RobotoMono-SemiBold.ttf") format("truetype"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/RobotoMono-SemiBold.ttf") format("truetype");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 }
@@ -200,67 +215,6 @@
   }
 }
 /*-- -------------------------- -->
-<---      Dark Mode Toggle      -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #dark-mode-toggle .cs-sun {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
-  body.dark-mode #dark-mode-toggle .cs-moon {
-    opacity: 0;
-    transform: translate(-50%, -150%);
-    fill: #fff;
-  }
-  #dark-mode-toggle {
-    z-index: 1000;
-    position: absolute;
-    top: 0.625rem;
-    right: 4.375rem;
-    display: block;
-    border: none;
-    background: transparent;
-    height: 3rem;
-    width: 3rem;
-    overflow: hidden;
-    padding: 0;
-  }
-  #dark-mode-toggle img,
-  #dark-mode-toggle svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 1.25rem;
-    width: 1.25rem;
-    pointer-events: none;
-  }
-  #dark-mode-toggle .cs-moon {
-    z-index: 2;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-  #dark-mode-toggle .cs-sun {
-    z-index: 1;
-    opacity: 0;
-    transform: translate(-50%, 100%);
-    transition: transform 0.3s, opacity 0.3s;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #dark-mode-toggle {
-    position: relative;
-    top: auto;
-    right: auto;
-    transform: none;
-    margin: 0;
-  }
-  #dark-mode-toggle:hover {
-    cursor: pointer;
-  }
-}
-/*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 /* Mobile - 1023px */
@@ -268,30 +222,29 @@
   body.cs-open {
     overflow: hidden;
   }
-  #cs-navigation {
-    z-index: 10000;
-    position: fixed;
-    background-color: #fff;
+  #cs-top-bar {
+    z-index: 100001;
+    background-color: var(--white);
     width: 100%;
+    padding: 0.75rem calc(16 / 16 * 1rem);
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0.75rem calc(16 / 16 * 1rem);
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Manrope", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
-  #cs-navigation .cs-container {
+  #cs-top-bar .cs-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
   }
-  #cs-navigation .cs-logo {
+  #cs-top-bar .cs-logo {
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 0 0;
+    margin: 0 auto 0 auto;
     height: 100%;
     max-width: 9.125rem;
     width: 40%;
@@ -299,13 +252,34 @@
     box-sizing: border-box;
     padding: 0;
   }
-  #cs-navigation .cs-logo img {
+  #cs-top-bar .cs-logo img {
     height: 100%;
     width: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
     /* places the image to the left edge of the parent */
-    object-position: left;
+    object-position: center;
+  }
+  #cs-top-bar .cs-button-solid {
+    display: none;
+  }
+  #cs-navigation {
+    z-index: 10000;
+    background-color: var(--secondary);
+    width: 100%;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    padding: 0;
+    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+    font-family: "Manrope", sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #cs-navigation .cs-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 4.25rem;
   }
   #cs-navigation .cs-toggle {
     display: flex;
@@ -474,7 +448,7 @@
     content: "";
     opacity: 0;
     display: block;
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--secondary);
     height: 100vh;
     width: 0%;
     transition: width 0.5s, opacity 0.3s;
@@ -494,25 +468,6 @@
   #cs-navigation.cs-active:before {
     opacity: 1;
     width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-line {
-    background-color: #fff;
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->
@@ -710,39 +665,66 @@
     display: none;
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-navigation .cs-drop-ul {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-drop-icon {
-    /* turns it white */
-    filter: grayscale(1) brightness(1000%);
-  }
-}
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-navigation {
+  #cs-top-bar {
     z-index: 10000;
-    position: fixed;
-    background-color: #fff;
+    background-color: var(--white);
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #cs-top-bar .cs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  #cs-top-bar .cs-nav-button {
+    position: absolute;
+    display: flex;
+    right: 15%;
+  }
+  #cs-top-bar .cs-logo {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right auto pushes everything away from it to the right */
+    margin: 0;
+    height: 4.0625rem;
+    max-width: 21.875rem;
+    width: 18.4%;
+    padding: 0;
+  }
+  #cs-top-bar .cs-logo img {
+    height: 100%;
+    width: 100%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
+    object-position: center;
+  }
+  #cs-navigation {
+    z-index: 10000;
+    background-color: var(--secondary);
+    width: 100%;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
     display: flex;
-    justify-content: flex-end;
+    height: 3.75rem;
+    justify-content: center;
     align-items: center;
     margin: auto;
     max-width: 80rem;
@@ -752,23 +734,10 @@
   #cs-navigation .cs-toggle {
     display: none;
   }
-  #cs-navigation .cs-logo {
-    z-index: 100;
+  #cs-navigation .cs-nav-button {
+    position: absolute;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-right auto pushes everything away from it to the right */
-    margin: 0 auto 0 0;
-    height: 4.0625rem;
-    max-width: 21.875rem;
-    width: 18.4%;
-    padding: 0;
-  }
-  #cs-navigation .cs-logo img {
-    height: 100%;
-    width: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-    object-fit: contain;
+    right: 2rem;
   }
   #cs-navigation .cs-ul {
     display: flex;
@@ -777,8 +746,8 @@
     margin: 0;
     width: 100%;
     padding: 0;
-    /* 20px - 36px */
-    gap: clamp(1.25rem, 2.6vw, 2.25rem);
+    /* 20px - 42    px */
+    gap: clamp(1.25rem, 2.6vw, 2.625rem);
   }
   #cs-navigation .cs-li {
     padding: 2rem 0;
@@ -794,42 +763,13 @@
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1vw, 1rem);
     line-height: 1.5em;
-    color: var(--bodyTextColor);
-  }
-  #cs-navigation .cs-li-link:hover:before {
-    width: 100%;
-  }
-  #cs-navigation .cs-li-link:before {
-    position: absolute;
-    bottom: 0rem;
-    left: 0;
-    /* active state underline */
-    content: "";
-    opacity: 1;
-    display: block;
-    background: var(--primary);
-    height: 2px;
-    width: 0%;
-    transition: width 0.3s;
-  }
-  #cs-navigation .cs-li-link.cs-active:before {
-    width: 100%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
+  #cs-navigation .cs-li-link:hover {
+    color: #8B5035;
+  }
+  #cs-navigation .cs-li-link.cs-active {
+    color: #8B5035;
   }
 }
 /*-- -------------------------- -->
@@ -949,7 +889,7 @@
     margin-bottom: 2.25rem;
     font-size: min(9vw, 3rem);
     line-height: 1.20833333em;
-    font-weight: 900;
+    font-weight: 600;
     color: #fff;
     text-align: center;
   }
@@ -1026,12 +966,6 @@
     background-repeat: no-repeat;
     height: 69.25rem;
     width: 125rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
   }
 }
 /*-- -------------------------- -->
@@ -1111,7 +1045,6 @@
     text-transform: uppercase;
     font-size: 1.125rem;
     line-height: 1.16666667em;
-    font-weight: bold;
     color: #fff;
   }
   #footer .right-section .lists ul h2:before {
@@ -1237,11 +1170,5 @@
   }
   #footer .credit .copyright {
     display: inline-block;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #footer {
-    background: #061623;
   }
 }
