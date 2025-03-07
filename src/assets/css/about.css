@@ -217,7 +217,7 @@
 @media only screen and (min-width: 0rem) {
   #steps {
     background-color: var(--beigeColor);
-    padding: 3.75rem 0;
+    padding: 3.75rem 0 0rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -232,6 +232,12 @@
     display: block;
     padding-top: 0;
     margin-bottom: 2.5rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #steps {
+    background-color: var(--beigeColor);
+    padding: 3.75rem 0;
   }
 }
 /*-- -------------------------- -->
