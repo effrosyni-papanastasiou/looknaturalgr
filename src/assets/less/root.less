@@ -17,6 +17,7 @@
         --bodyTextColorWhite: #FFFBF8;
         --babyBlue: #D5ECFF;
         --white: #FFFBF8; 
+        --beigeColor: #FFF1EA;
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
@@ -24,7 +25,6 @@
         --header2FontSize: clamp(1.8375rem, 3.9vw, 2rem);
         --header3FontSize: clamp(1.5375rem, 3.9vw, 1.8rem);
         --bodyFontSize: 1rem;
-        --beigeColor: #FFF1EA;
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
@@ -80,7 +80,11 @@
     .cs-button-solid {
         z-index: 1;
         position: relative;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.4rem;
+        align-items: center;
         background-color: var(--primary);
         min-width: (150/16rem);
         width: auto;
@@ -117,6 +121,11 @@
             //Transition properties
             width: 0;
             transition: width 0.3s;
+        }
+
+        img {
+            // margin-left: 0.2rem;
+            // width: 20px;
         }
     }
 
@@ -833,7 +842,7 @@
         .cs-nav {
             display: none;
         }
-        
+
         .cs-container {
             display: flex;
             justify-content: center;
