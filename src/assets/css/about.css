@@ -446,6 +446,13 @@
   #reviews-278 .cs-card {
     max-width: 39.375rem;
   }
+  #reviews-278 .cs-card .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #reviews-278 .cs-card .cs-title,
+  #reviews-278 .cs-card .cs-topper {
+    color: var(--bodyTextColorWhite);
+  }
   #reviews-278 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -461,12 +468,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #reviews-278 .cs-title,
-  #reviews-278 .cs-topper {
-    color: var(--bodyTextColorWhite);
-  }
   #reviews-278 .cs-text {
-    color: var(--bodyTextColorWhite);
     margin-bottom: 1rem;
   }
   #reviews-278 .cs-text:last-of-type {
@@ -485,6 +487,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid var(--primary);
+  }
+  #reviews-278 .cs-review .cs-text {
+    color: var(--primary);
+  }
+  #reviews-278 .cs-review .cs-title,
+  #reviews-278 .cs-review .cs-topper {
+    color: var(--primary);
   }
   #reviews-278 .cs-review-img {
     width: 7rem;
@@ -542,7 +552,6 @@
     order: 2;
   }
   #reviews-278 .cs-review {
-    border-bottom: 1px solid var(--primary);
     box-shadow: none;
     width: 50%;
   }

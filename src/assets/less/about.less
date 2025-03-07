@@ -525,6 +525,14 @@
 
         .cs-card {
             max-width: (630/16rem);
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-title,
+            .cs-topper {
+                color: var(--bodyTextColorWhite);
+            }
         }
 
         .cs-content {
@@ -543,13 +551,7 @@
             align-items: flex-start;
         }
 
-        .cs-title,
-        .cs-topper {
-            color: var(--bodyTextColorWhite);
-        }
-
         .cs-text {
-            color: var(--bodyTextColorWhite);
             margin-bottom: (16/16rem);
             &:last-of-type {
                 margin-bottom: (32/16rem);
@@ -571,6 +573,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            border-bottom: 1px solid var(--primary);
+            .cs-text {
+                color: var(--primary);
+            }
+
+            .cs-title,
+            .cs-topper {
+                color: var(--primary);
+            }
         }
 
         .cs-review-img {
@@ -639,7 +650,6 @@
 
         .cs-review {
             // margin-left: 8rem;
-            border-bottom: 1px solid var(--primary);
             box-shadow: none;
             width: 50%;
             .cs-text, .cs-title {
