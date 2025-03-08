@@ -4,12 +4,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-2172 {
+  #hero-1 {
     background-color: var(--beigeColor);
     position: relative;
     z-index: 1;
   }
-  #sbsr-2172 .cs-container {
+  #hero-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
   }
-  #sbsr-2172 .cs-content {
+  #hero-1 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -31,19 +31,19 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbsr-2172 .cs-text {
+  #hero-1 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbsr-2172 .cs-text:last-of-type {
+  #hero-1 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbsr-2172 .cs-picture {
+  #hero-1 .cs-picture {
     position: relative;
     width: 100%;
     height: 35rem;
     z-index: 1;
   }
-  #sbsr-2172 .cs-picture img {
+  #hero-1 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -54,12 +54,12 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbsr-2172 {
+  #hero-1 {
     /* 90px - 150px */
     /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
     padding: 0 1rem;
   }
-  #sbsr-2172 .cs-container {
+  #hero-1 .cs-container {
     min-height: 41.75rem;
     flex-direction: row;
     justify-content: flex-start;
@@ -68,13 +68,13 @@
     position: relative;
     z-index: 1;
   }
-  #sbsr-2172 .cs-content {
+  #hero-1 .cs-content {
     width: 50%;
     max-width: 35.1875rem;
     /* 32px - 116px */
     padding: clamp(2rem, 8vw, 7.25rem) 0;
   }
-  #sbsr-2172 .cs-picture {
+  #hero-1 .cs-picture {
     width: 50vw;
     height: auto;
     position: absolute;
@@ -88,13 +88,13 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-2172 {
+  #glance-1 {
     background-color: var(--primary);
     position: relative;
     z-index: 1;
     border-bottom: 1px solid var(--primary);
   }
-  #sbs-2172 .cs-container {
+  #glance-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -102,7 +102,7 @@
     flex-direction: column;
     align-items: center;
   }
-  #sbs-2172 .cs-content-left {
+  #glance-1 .cs-content-left {
     padding: var(--sectionPadding);
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -115,11 +115,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-2172 .cs-content-left .cs-title,
-  #sbs-2172 .cs-content-left .cs-text {
+  #glance-1 .cs-content-left .cs-title,
+  #glance-1 .cs-content-left .cs-text {
     color: var(--bodyTextColorWhite);
   }
-  #sbs-2172 .cs-content-right {
+  #glance-1 .cs-content-right {
     background-color: var(--beigeColor);
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -133,34 +133,34 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-2172 .cs-text {
+  #glance-1 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbs-2172 .cs-text:last-of-type {
+  #glance-1 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-2172 .cs-ul {
+  #glance-1 .cs-ul {
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
   }
-  #sbs-2172 .cs-li {
+  #glance-1 .cs-li {
     padding: 0.75rem 1.25rem;
     border: 1px solid black;
     list-style: none;
   }
-  #sbs-2172 .cs-li:nth-child(1) {
+  #glance-1 .cs-li:nth-child(1) {
     margin-top: 0rem;
   }
-  #sbs-2172 .cs-li-text {
+  #glance-1 .cs-li-text {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0 0 1rem;
     color: var(--bodyTextColor);
   }
-  #sbs-2172 .cs-flex {
+  #glance-1 .cs-flex {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
@@ -171,11 +171,11 @@
     gap: 0.625rem;
     justify-content: space-between;
   }
-  #sbs-2172 .cs-flex .right {
+  #glance-1 .cs-flex .right {
     display: flex;
     margin-left: auto;
   }
-  #sbs-2172 .cs-flex .cs-icon {
+  #glance-1 .cs-flex .cs-icon {
     width: 2rem;
     height: auto;
     display: block;
@@ -183,12 +183,12 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbs-2172 {
+  #glance-1 {
     /* 90px - 150px */
     /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
     padding: 0 1rem;
   }
-  #sbs-2172 .cs-container {
+  #glance-1 .cs-container {
     flex-direction: row;
     justify-content: flex-start;
     /* 48px - 64px */
@@ -196,14 +196,14 @@
     position: relative;
     z-index: 1;
   }
-  #sbs-2172 .cs-content-left {
+  #glance-1 .cs-content-left {
     min-height: 41.75rem;
     width: 48%;
     max-width: 35.1875rem;
     /* 32px - 116px */
     padding: clamp(2rem, 8vw, 7.25rem) 0;
   }
-  #sbs-2172 .cs-content-right {
+  #glance-1 .cs-content-right {
     width: 50vw;
     min-height: 41.75rem;
     padding: clamp(2rem, 8vw, 7.25rem) 5rem;
@@ -215,7 +215,7 @@
 }
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps {
+  #steps-1 {
     background-color: var(--beigeColor);
     padding: 3.75rem 0 0rem 0;
     text-align: center;
@@ -223,10 +223,10 @@
     flex-direction: column;
     align-items: center;
   }
-  #steps .cs-steps {
+  #steps-1 .cs-steps {
     margin-bottom: 1.25rem;
   }
-  #steps .cs-icon {
+  #steps-1 .cs-icon {
     width: 5rem;
     height: auto;
     display: block;
@@ -235,7 +235,7 @@
   }
 }
 @media only screen and (min-width: 48rem) {
-  #steps {
+  #steps-1 {
     background-color: var(--beigeColor);
     padding: 3.75rem 0;
   }
@@ -425,23 +425,23 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-278 {
+  #reviews-1 {
     background-color: var(--beigeColor);
   }
-  #reviews-278 .cs-container {
+  #reviews-1 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet*/
     max-width: 34.375rem;
     margin: auto;
   }
-  #reviews-278 .cs-picture {
+  #reviews-1 .cs-picture {
     width: 100%;
     /* 200px - 304px */
     height: clamp(12.5rem, 23.45vw, 19rem);
     display: block;
     position: relative;
   }
-  #reviews-278 .cs-picture img {
+  #reviews-1 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -449,10 +449,10 @@
     width: 100%;
     object-fit: cover;
   }
-  #reviews-278 .cs-card {
+  #reviews-1 .cs-card {
     max-width: 39.375rem;
   }
-  #reviews-278 .cs-content {
+  #reviews-1 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -467,18 +467,18 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #reviews-278 .cs-text {
+  #reviews-1 .cs-text {
     margin-bottom: 1rem;
   }
-  #reviews-278 .cs-text:last-of-type {
+  #reviews-1 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #reviews-278 .cs-button-solid {
+  #reviews-1 .cs-button-solid {
     /* button styles override */
     border: 1px solid var(--bodyTextColorWhite);
     color: var(--bodyTextColorWhite);
   }
-  #reviews-278 .cs-review {
+  #reviews-1 .cs-review {
     /* padding left & right 32px - 80px */
     padding: 2.5rem clamp(2rem, 6vw, 5rem);
     box-shadow: rgba(20, 20, 58, 0.2) 0px 5px 0.625rem;
@@ -489,21 +489,20 @@
     border-top: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
   }
-  #reviews-278 .cs-review .cs-text {
+  #reviews-1 .cs-review .cs-text {
     color: var(--primary);
   }
-  #reviews-278 .cs-review .cs-title,
-  #reviews-278 .cs-review .cs-topper {
+  #reviews-1 .cs-review .cs-title {
     color: var(--primary);
   }
-  #reviews-278 .cs-review-img {
+  #reviews-1 .cs-review-img {
     width: 7rem;
     height: 1.25rem;
     display: block;
     /* margin-bottom 8px - 12px */
     margin: 0 auto clamp(0.5rem, 2vw, 0.75rem);
   }
-  #reviews-278 .cs-review-title {
+  #reviews-1 .cs-review-title {
     /* 25px - 31px */
     font-size: clamp(1.5625rem, 3.1vw, 1.9375rem);
     line-height: 1.2em;
@@ -514,7 +513,7 @@
     color: var(--headerColor);
     display: block;
   }
-  #reviews-278 .cs-review-p {
+  #reviews-1 .cs-review-p {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.5em;
@@ -524,7 +523,7 @@
     margin: 0 auto clamp(1.5rem, 4.2vw, 2rem);
     color: var(--bodyTextColor);
   }
-  #reviews-278 .cs-review-name {
+  #reviews-1 .cs-review-name {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.5em;
@@ -537,13 +536,13 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-278 .cs-container {
+  #reviews-1 .cs-container {
     max-width: 120rem;
     display: flex;
     justify-content: center;
     align-items: stretch;
   }
-  #reviews-278 .cs-card {
+  #reviews-1 .cs-card {
     /* prevents it from being squished by flexbox */
     flex: none;
     width: 50%;
@@ -551,12 +550,12 @@
     /* sends it to the right in the second position */
     order: 2;
   }
-  #reviews-278 .cs-review {
+  #reviews-1 .cs-review {
     box-shadow: none;
     width: 50%;
   }
-  #reviews-278 .cs-review .cs-text,
-  #reviews-278 .cs-review .cs-title {
+  #reviews-1 .cs-review .cs-text,
+  #reviews-1 .cs-review .cs-title {
     color: var(--primary);
   }
 }
@@ -565,14 +564,14 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #gallery-1897 {
+  #results-1 {
     padding: var(--sectionPadding);
     background-color: var(--primary);
     /* stops the cs-graphics from causing an overflow */
     overflow: hidden;
     position: relative;
   }
-  #gallery-1897 .cs-container {
+  #results-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -582,10 +581,10 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
-  #gallery-1897 .cs-title {
+  #results-1 .cs-title {
     color: var(--bodyTextColorWhite);
   }
-  #gallery-1897 .cs-content {
+  #results-1 .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
@@ -595,14 +594,14 @@
     gap: 1.5rem;
     z-index: 1;
   }
-  #gallery-1897 .cs-title {
+  #results-1 .cs-title {
     margin: 0;
   }
-  #gallery-1897 .cs-button-solid {
+  #results-1 .cs-button-solid {
     color: white;
     border: 1px solid white;
   }
-  #gallery-1897 .cs-gallery {
+  #results-1 .cs-gallery {
     width: 100%;
     display: grid;
     grid-auto-flow: row;
@@ -610,7 +609,7 @@
     gap: clamp(1rem, 2vw, 1.25rem);
     z-index: 1;
   }
-  #gallery-1897 .cs-item {
+  #results-1 .cs-item {
     width: 100%;
     /* 16px - 32px */
     padding: clamp(1rem, 4vw, 2rem);
@@ -621,7 +620,7 @@
     column-gap: clamp(0.5rem, 2vw, 1rem);
     row-gap: 1rem;
   }
-  #gallery-1897 .cs-item-text {
+  #results-1 .cs-item-text {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
@@ -629,19 +628,19 @@
     color: var(--headerColor);
     grid-column: span 2;
   }
-  #gallery-1897 .cs-picture-group {
+  #results-1 .cs-picture-group {
     /* 160px - 320px */
     min-height: clamp(10rem, 23vw, 20rem);
     overflow: hidden;
     grid-column: span 2;
     position: relative;
   }
-  #gallery-1897 .cs-picture {
+  #results-1 .cs-picture {
     width: 100%;
     height: 100%;
     display: block;
   }
-  #gallery-1897 .cs-picture img {
+  #results-1 .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -649,7 +648,7 @@
     top: 0;
     left: 0;
   }
-  #gallery-1897 .cs-tag {
+  #results-1 .cs-tag {
     font-size: 0.875rem;
     line-height: 1.5em;
     padding: 0.25rem 0.75rem;
@@ -665,13 +664,13 @@
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-  #gallery-1897 .cs-gallery {
+  #results-1 .cs-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
-  #gallery-1897 .cs-graphic-top {
+  #results-1 .cs-graphic-top {
     margin-left: 15rem;
     left: 50%;
   }
@@ -681,11 +680,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-341 {
+  #services-1 {
     padding: var(--sectionPadding);
     background-color: var(--beigeColor);
   }
-  #services-341 .cs-container {
+  #services-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -695,7 +694,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-341 .cs-content {
+  #services-1 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -704,7 +703,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #services-341 .cs-card-group {
+  #services-1 .cs-card-group {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -715,7 +714,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 1.6vw, 1.25rem);
   }
-  #services-341 .cs-item {
+  #services-1 .cs-item {
     background-color: var(--bodyTextColorWhite);
     list-style: none;
     width: 100%;
@@ -724,18 +723,18 @@
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;
   }
-  #services-341 .cs-item:hover {
+  #services-1 .cs-item:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transform: translateY(-0.4375rem);
   }
-  #services-341 .cs-item:hover .cs-picture img {
+  #services-1 .cs-item:hover .cs-picture img {
     opacity: 0.3;
     transform: scale(1.1);
   }
-  #services-341 .cs-item:hover .cs-h3 {
+  #services-1 .cs-item:hover .cs-h3 {
     color: var(--primaryLight);
   }
-  #services-341 .cs-item:before {
+  #services-1 .cs-item:before {
     /* border, done in pseudo so it can sit under the picture */
     content: "";
     width: 100%;
@@ -751,13 +750,13 @@
     left: 0;
     z-index: -1;
   }
-  #services-341 .cs-link {
+  #services-1 .cs-link {
     text-decoration: none;
     /* 16px - 24px */
     padding-bottom: clamp(1rem, 2.2vw, 1.5rem);
     display: block;
   }
-  #services-341 .cs-picture {
+  #services-1 .cs-picture {
     width: 100%;
     height: 15rem;
     /* 16px - 24px */
@@ -769,7 +768,7 @@
     position: relative;
     z-index: 10;
   }
-  #services-341 .cs-picture img {
+  #services-1 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -778,7 +777,7 @@
     object-fit: cover;
     transition: transform 0.6s, opacity 0.3s;
   }
-  #services-341 .cs-h3 {
+  #services-1 .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
@@ -789,7 +788,7 @@
     padding: 0 clamp(1rem, 2vw, 1.5rem);
     transition: color 0.3s;
   }
-  #services-341 .cs-item-text {
+  #services-1 .cs-item-text {
     /* 14px - 16px  */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -801,7 +800,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-341 .cs-card-group {
+  #services-1 .cs-card-group {
     flex-direction: row;
   }
 }
@@ -810,12 +809,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbsr-blue-2172 {
+  #surgeon-1 {
     background-color: var(--primary);
     position: relative;
     z-index: 1;
   }
-  #sbsr-blue-2172 .cs-container {
+  #surgeon-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -823,7 +822,7 @@
     flex-direction: column;
     align-items: center;
   }
-  #sbsr-blue-2172 .cs-content {
+  #surgeon-1 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -837,26 +836,26 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbsr-blue-2172 .cs-title {
+  #surgeon-1 .cs-title {
     color: white;
   }
-  #sbsr-blue-2172 .cs-text {
+  #surgeon-1 .cs-text {
     color: white;
     margin-bottom: 1rem;
   }
-  #sbsr-blue-2172 .cs-text:last-of-type {
+  #surgeon-1 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbsr-blue-2172 .cs-button-solid {
+  #surgeon-1 .cs-button-solid {
     background-color: var(--secondary);
   }
-  #sbsr-blue-2172 .cs-picture {
+  #surgeon-1 .cs-picture {
     position: relative;
     width: 100%;
     height: 35rem;
     z-index: 1;
   }
-  #sbsr-blue-2172 .cs-picture img {
+  #surgeon-1 .cs-picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -867,12 +866,12 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbsr-blue-2172 {
+  #surgeon-1 {
     /* 90px - 150px */
     /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
     padding: 0 1rem;
   }
-  #sbsr-blue-2172 .cs-container {
+  #surgeon-1 .cs-container {
     min-height: 41.75rem;
     flex-direction: row;
     justify-content: flex-start;
@@ -881,13 +880,13 @@
     position: relative;
     z-index: 1;
   }
-  #sbsr-blue-2172 .cs-content {
+  #surgeon-1 .cs-content {
     width: 50%;
     max-width: 35.1875rem;
     /* 32px - 116px */
     padding: clamp(2rem, 8vw, 7.25rem) 0;
   }
-  #sbsr-blue-2172 .cs-picture {
+  #surgeon-1 .cs-picture {
     width: 50vw;
     height: auto;
     position: absolute;
@@ -901,14 +900,14 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #faq-1263 {
+  #faq-1 {
     padding: var(--sectionPadding);
     background-color: var(--beigeColor);
     position: relative;
     overflow: hidden;
     z-index: 1;
   }
-  #faq-1263 .cs-container {
+  #faq-1 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -919,7 +918,7 @@
     /* 40px - 48px */
     gap: clamp(2.5rem, 5vw, 3rem);
   }
-  #faq-1263 .cs-content {
+  #faq-1 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -928,11 +927,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #faq-1263 .cs-title {
+  #faq-1 .cs-title {
     margin: 0;
     color: var(--primary);
   }
-  #faq-1263 .cs-faq-group {
+  #faq-1 .cs-faq-group {
     width: 100%;
     max-width: 52.875rem;
     padding: 0;
@@ -944,7 +943,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.4vw, 1.25rem);
   }
-  #faq-1263 .cs-faq-item {
+  #faq-1 .cs-faq-item {
     list-style: none;
     width: 100%;
     background-color: var(--primary);
@@ -952,18 +951,18 @@
     box-sizing: border-box;
     transition: border-bottom 0.3s;
   }
-  #faq-1263 .cs-faq-item.active .cs-button {
+  #faq-1 .cs-faq-item.active .cs-button {
     color: var(--bodyTextColorWhite);
   }
-  #faq-1263 .cs-faq-item.active .cs-button:before {
+  #faq-1 .cs-faq-item.active .cs-button:before {
     background-color: var(--bodyTextColorWhite);
     transform: rotate(315deg);
   }
-  #faq-1263 .cs-faq-item.active .cs-button:after {
+  #faq-1 .cs-faq-item.active .cs-button:after {
     background-color: var(--bodyTextColorWhite);
     transform: rotate(-315deg);
   }
-  #faq-1263 .cs-faq-item.active .cs-item-p {
+  #faq-1 .cs-faq-item.active .cs-item-p {
     height: auto;
     margin-top: 0.75rem;
     /* 16px - 24px */
@@ -972,7 +971,7 @@
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #faq-1263 .cs-faq-item.active .cs-item-p:before {
+  #faq-1 .cs-faq-item.active .cs-item-p:before {
     /* border top */
     content: "";
     height: 1px;
@@ -984,7 +983,7 @@
     left: 1.5rem;
     right: 1.5rem;
   }
-  #faq-1263 .cs-button {
+  #faq-1 .cs-button {
     /* 16px - 20px */
     font-size: var(--bodyFontSize);
     font-family: 'Roboto Mono';
@@ -1005,10 +1004,10 @@
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #faq-1263 .cs-button:hover {
+  #faq-1 .cs-button:hover {
     cursor: pointer;
   }
-  #faq-1263 .cs-button:before {
+  #faq-1 .cs-button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -1025,7 +1024,7 @@
     transform-origin: left center;
     transition: transform 0.5s;
   }
-  #faq-1263 .cs-button:after {
+  #faq-1 .cs-button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -1042,12 +1041,12 @@
     transform-origin: right center;
     transition: transform 0.5s;
   }
-  #faq-1263 .cs-button-text {
+  #faq-1 .cs-button-text {
     width: 90%;
     padding: 0;
     display: block;
   }
-  #faq-1263 .cs-item-p {
+  #faq-1 .cs-item-p {
     line-height: 1.5em;
     width: 100%;
     height: 0;
@@ -1063,7 +1062,7 @@
     position: relative;
     transition: opacity 0.3s, padding-bottom 0.3s, padding-top 0.3s;
   }
-  #faq-1263 .cs-background {
+  #faq-1 .cs-background {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1071,7 +1070,7 @@
     left: 0;
     z-index: -1;
   }
-  #faq-1263 .cs-background img {
+  #faq-1 .cs-background img {
     width: 100%;
     height: 100%;
     object-fit: cover;

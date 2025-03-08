@@ -1276,16 +1276,23 @@
 @media only screen and (min-width: 1300px) {
     #cta {
         position: relative;
-        margin-top: (100/16rem);
+
         .container {
             margin: auto;
             width: 90.0625%;
         }
 
+        .cs-button-solid {
+            height: (53/16rem);
+            width: (250/16rem);
+            padding-top: (3/16rem);
+            margin: auto;
+        }
+
         picture {
             left: 50%;
             transform: translateX(-50%);
-            width: 90.0625%;
+            width: 100%;
 
             &:before {
                 z-index: 1;
@@ -1312,7 +1319,7 @@
             opacity: 1;
             transform: translateX(-50%);
             display: block;
-            background: url("/assets/svgs/cta-squares.svg");
+            // background: url("/assets/svgs/cta-squares.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -1565,3 +1572,185 @@
 
 
 
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #contact-984 {
+        border: 1px solid var(--primary);
+        position: relative;
+        z-index: 1;
+        // background-color: var(--babyBlue);
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: (48/16rem);
+        }
+
+        .cs-content {
+
+            /* set text aling to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            margin: 0;
+            margin: (12/16rem) 0;
+        }
+
+        .cs-right {
+            width: 100%;
+            /* changes to 630px at desktop */
+            max-width: (584/16rem);
+            /* moved section padding to the content so the picture can be full width */
+            padding: var(--sectionPadding);
+            padding-top: 0;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: (40/16rem);
+        }
+
+        .cs-form {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+            gap: (12/16rem);
+        }
+
+        .cs-label {
+            font-size: (16/16rem);
+            width: 100%;
+            color: var(--headerColor);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: (8/16rem);
+        }
+
+        .cs-input {
+            font-size: (16/16rem);
+            width: 100%;
+            height: (56/16rem);
+            padding: 0;
+            padding-left: (24/16rem);
+            color: var(--headerColor);
+            background-color: transparent;
+
+            // background-color: #f7f7f7;
+            border: none;
+            border-bottom: 1px solid var(--primary);
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            &:hover {
+                border-color: var(--primary);
+            }
+            &:focus {
+                outline: 1px solid var(--primary);
+            }
+            &::placeholder {
+                color: #767676;
+                opacity: 0;
+            }
+        }
+
+        .cs-textarea {
+            min-height: (120/16rem);
+            padding-top: (24/16rem);
+            margin-bottom: (28/16rem);
+            font-family: inherit;
+        }
+
+
+        .cs-submit {
+            min-width: (214/16rem);
+            border: none;
+            border-radius: 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            /* 360px - 600px */
+            height: clamp(22.5rem, 100vw, 37.5rem);
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #contact-984 {
+        padding: var(--sectionPadding);
+        position: relative;
+
+        .cs-container {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .cs-form {
+            max-width: (630/16rem);
+        }
+
+        .cs-content {
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .cs-form {
+            align-items: flex-start;
+        }
+
+        .cs-picture {
+            position: absolute;
+            height: 100%;
+            width: 44%;
+            right: 50%;
+            left: 0;
+            /* 70px - 88px */
+            margin-right: clamp(4.375rem, 7vw, 5.5rem);
+        }
+
+        .cs-right {
+            width: 50%;
+            max-width: (630/16rem);
+            padding: 0;
+        }
+    }
+}
+
+                                
