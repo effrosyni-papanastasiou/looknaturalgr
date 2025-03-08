@@ -705,6 +705,34 @@
             }
         }
 
+        .cs-sub-dropdown {
+            position: relative;
+            
+            &.cs-active,
+            &:focus-within {
+                cursor: pointer;
+
+                .cs-sub-drop-ul {
+                    // background-color: gray;
+                    // height: 100svh - 60px - 92px; //!!!!!
+                    height: 100vh;
+                    overflow: auto;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scaleY(1);
+                    // :nth-child()
+                }
+
+                .cs-sub-drop-li {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
         .cs-dropdown-button {
             border: none;
             background-color: transparent;
@@ -714,38 +742,145 @@
             appearance: none;
         }
 
+        .cs-sub-dropdown-button {
+            border: none;
+            background-color: transparent;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+            appearance: none;
+            &.cs-li-link {
+                display: flex;
+                flex-direction: row;
+                // justify-content: space-between;
+                gap: (60/16rem);
+                padding: (16/16rem) (80/16rem);
+            }
+        }
+
         .cs-drop-icon {
+            position: relative;
             display: inline-block;
             height: auto;
-            width: (15/16rem);
+            width: (24/16rem);
+        }
+
+        .cs-sub-drop-ul {
+            border-left: 1px solid white;            
+            z-index: 100;
+            /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+            // columns: 1;
+            position: fixed;
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 4rem;
+            left: (400/16rem);
+            top: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: scaleY(0);
+            // border-bottom: 5px solid var(--primary);
+            margin: 0;
+            background-color: var(--primary);
+            // min-width: (280/16rem);
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: (16/16rem) (80/16rem);
+            padding-bottom: 100rem;
+            transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+            transform-origin: top;
+        }
+
+        .cs-sub-drop-li {
+            opacity: 0;
+            // transform: translateY(calc(-10 / 16 * 1rem));
+            display: block;
+            height: 100%;
+            // width: 60%;
+            list-style: none;
+            text-decoration: none;
+            color: var(--bodyTextColor);
+            transition: opacity 0.6s, transform 0.6s;
+
+            .cs-li-link {
+                font-size: (24/16rem);
+                font-weight: 700;
+            }
+
+            .cs-description {
+                padding-top: 1rem;
+                color: var(--bodyTextColorWhite);
+            }
+
+            &:nth-of-type(1) {
+                padding-top: (48/16rem);
+            }
+            &:nth-of-type(2) {
+                padding-top: (48/16rem);
+            }
+            &:nth-of-type(3) {
+                padding-top: (48/16rem);
+
+            }
+            &:nth-of-type(4) {
+            }
+            &:nth-of-type(5) {
+            }
+            &:nth-of-type(6) {
+            }
+            &:nth-of-type(7) {
+            }
+            &:nth-of-type(8) {
+            }
+            &:nth-of-type(9) {
+            }
+            &:nth-of-type(10) {
+            }
+            &:nth-of-type(11) {
+            }
+            &:nth-of-type(12) {
+            }
+            &:nth-of-type(13) {
+            }
         }
 
         .cs-drop-ul {
-            z-index: -100;
+            z-index: 100;
             /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-            // columns: 2;
-            position: absolute;
-            top: 100%;
+            columns: 1;
+            position: fixed;
+            left: 0;
+            // left: 100px;
+            top: 150px;
             visibility: hidden;
             opacity: 0;
             transform: scaleY(0);
             border-bottom: 5px solid var(--primary);
             margin: 0;
-            background-color: #fff;
-            min-width: (200/16rem);
-            overflow: hidden;
-            padding: 0;
+            background-color: var(--primary);
+            // min-width: (280/16rem);
+            width: 100%;
+            height: 100%;
+            // overflow: hidden;
             transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
             transform-origin: top;
+
+            // top: 0;
+            bottom:0;
+            overflow-y:scroll;
+            overflow-x:hidden;
         }
 
         .cs-drop-li {
             opacity: 0;
-            transform: translateY(calc(-10 / 16 * 1rem));
+            // transform: translateY(calc(-10 / 16 * 1rem));
             display: block;
             height: auto;
-            width: 100%;
+            width: 60%;
             list-style: none;
             text-decoration: none;
             font-size: (16/16rem);
@@ -753,6 +888,7 @@
             transition: opacity 0.6s, transform 0.6s;
 
             &:nth-of-type(1) {
+                padding-top: (48/16rem);
                 transition-delay: 0.05s;
             }
             &:nth-of-type(2) {
@@ -796,15 +932,15 @@
         .cs-li-link {
             &.cs-drop-link {
                 display: block;
-                width: 100%;
+                width: 50%;
                 /* prevents padding from affecting height and width */
                 box-sizing: border-box;
-                padding: (12/16rem);
+                padding: (16/16rem) (80/16rem);
                 white-space: nowrap;
                 text-decoration: none;
                 font-size: (16/16rem);
                 line-height: 1.5em;
-                color: var(--bodyTextColor);
+                color: var(--bodyTextColorWhite);
                 transition: color 0.3s, background-color 0.3s;
 
                 &:hover {
@@ -1426,3 +1562,6 @@
         }
     }
 }
+
+
+

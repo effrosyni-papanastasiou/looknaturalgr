@@ -108,3 +108,53 @@
     color: #fff;
   }
 }
+@media only screen and (min-width: 0rem) {
+  #filter-gallery {
+    text-align: center;
+    /*filter CSS */
+  }
+  #filter-gallery input {
+    display: none;
+  }
+  #filter-gallery .tag {
+    font-size: 20px;
+    margin: 1.5em 0px;
+    padding: 5px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+    background: #efefef;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  #filter-gallery img {
+    height: 15.625rem;
+    max-width: 50%;
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+  }
+  #filter-gallery .images {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #filter-gallery #fish:checked ~ .images > img:not([class*='fish']),
+  #filter-gallery #birds:checked ~ .images > img:not([class*='birds']),
+  #filter-gallery #lion:checked ~ .images > img:not([class*='lion']) {
+    width: 0px;
+    height: 0px;
+  }
+  #filter-gallery #all:checked ~ .all,
+  #filter-gallery #fish:checked ~ .tag1,
+  #filter-gallery #birds:checked ~ .tag2,
+  #filter-gallery #lion:checked ~ .tag3 {
+    background-color: #333333;
+    color: white;
+  }
+}

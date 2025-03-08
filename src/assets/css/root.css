@@ -566,6 +566,28 @@
     opacity: 1;
     transform: translateY(0);
   }
+  #cs-navigation .cs-sub-dropdown {
+    position: relative;
+  }
+  #cs-navigation .cs-sub-dropdown.cs-active,
+  #cs-navigation .cs-sub-dropdown:focus-within {
+    cursor: pointer;
+  }
+  #cs-navigation .cs-sub-dropdown.cs-active .cs-sub-drop-ul,
+  #cs-navigation .cs-sub-dropdown:focus-within .cs-sub-drop-ul {
+    height: 100vh;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  #cs-navigation .cs-sub-dropdown.cs-active .cs-sub-drop-li,
+  #cs-navigation .cs-sub-dropdown:focus-within .cs-sub-drop-li {
+    opacity: 1;
+    transform: translateY(0);
+  }
   #cs-navigation .cs-dropdown-button {
     border: none;
     background-color: transparent;
@@ -574,35 +596,104 @@
     cursor: pointer;
     appearance: none;
   }
+  #cs-navigation .cs-sub-dropdown-button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    appearance: none;
+  }
+  #cs-navigation .cs-sub-dropdown-button.cs-li-link {
+    display: flex;
+    flex-direction: row;
+    gap: 3.75rem;
+    padding: 1rem 5rem;
+  }
   #cs-navigation .cs-drop-icon {
+    position: relative;
     display: inline-block;
     height: auto;
-    width: 0.9375rem;
+    width: 1.5rem;
+  }
+  #cs-navigation .cs-sub-drop-ul {
+    border-left: 1px solid white;
+    z-index: 100;
+    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
+    position: fixed;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+    left: 25rem;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    margin: 0;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1rem 5rem;
+    padding-bottom: 100rem;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+    transform-origin: top;
+  }
+  #cs-navigation .cs-sub-drop-li {
+    opacity: 0;
+    display: block;
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: var(--bodyTextColor);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  #cs-navigation .cs-sub-drop-li .cs-li-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  #cs-navigation .cs-sub-drop-li .cs-description {
+    padding-top: 1rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #cs-navigation .cs-sub-drop-li:nth-of-type(1) {
+    padding-top: 3rem;
+  }
+  #cs-navigation .cs-sub-drop-li:nth-of-type(2) {
+    padding-top: 3rem;
+  }
+  #cs-navigation .cs-sub-drop-li:nth-of-type(3) {
+    padding-top: 3rem;
   }
   #cs-navigation .cs-drop-ul {
-    z-index: -100;
+    z-index: 100;
     /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
-    position: absolute;
-    top: 100%;
+    columns: 1;
+    position: fixed;
+    left: 0;
+    top: 150px;
     visibility: hidden;
     opacity: 0;
     transform: scaleY(0);
     border-bottom: 5px solid var(--primary);
     margin: 0;
-    background-color: #fff;
-    min-width: 12.5rem;
-    overflow: hidden;
-    padding: 0;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
     transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
     transform-origin: top;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   #cs-navigation .cs-drop-li {
     opacity: 0;
-    transform: translateY(calc(-10 / 16 * 1rem));
     display: block;
     height: auto;
-    width: 100%;
+    width: 60%;
     list-style: none;
     text-decoration: none;
     font-size: 1rem;
@@ -610,6 +701,7 @@
     transition: opacity 0.6s, transform 0.6s;
   }
   #cs-navigation .cs-drop-li:nth-of-type(1) {
+    padding-top: 3rem;
     transition-delay: 0.05s;
   }
   #cs-navigation .cs-drop-li:nth-of-type(2) {
@@ -650,15 +742,15 @@
   }
   #cs-navigation .cs-li-link.cs-drop-link {
     display: block;
-    width: 100%;
+    width: 50%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
-    padding: 0.75rem;
+    padding: 1rem 5rem;
     white-space: nowrap;
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.5em;
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
     transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {

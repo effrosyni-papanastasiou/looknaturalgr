@@ -148,25 +148,48 @@
                                         aria-label="dropdown-{{ entry.key }}"
                                     >
                                         {{ entry.key }}
-                                        <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                        <!-- <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true"> -->
                                     </button>
 
                                     {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
                                     <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
                                         {% for child in entry.children %}
-                                            <li class="cs-drop-li">
-                                                <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                            {% set hasSubChild = child.children.length %}
+                
+                                            <li class="cs-drop-li {% if hasSubChild %} cs-sub-dropdown {% endif %}">
+                                                {% if hasSubChild %}
+                                                    <button 
+                                                        class="cs-li-link cs-sub-dropdown-button"
+                                                        aria-expanded="false"
+                                                        aria-controls="sub-dropdown-{{ child.key }}"
+                                                        aria-label="sub-dropdown-{{ child.key }}"
+                                                    >
+                                                        {{ child.key }}
+                                                        <img class="cs-drop-icon" src="/assets/svgs/right-arrow.svg" alt="dropdown icon" width="12" height="12" decoding="async" aria-hidden="true">
+                                                    </button>
+                
+                                                    <ul class="cs-sub-drop-ul" id="sub-dropdown-{{ child.key }}">
+                                                        {% for subChild in child.children %}
+                                                            <li class="cs-sub-drop-li">
+                                                                <a href="{{ subChild.url }}" class="cs-li-link cs-sub-drop-link">{{ subChild.key }}</a>
+                                                                <p class="cs-description">{{ subChild.menu }}</p>
+                                                            </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% else %}
+                                                    <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                                {% endif %}
                                             </li>
                                         {% endfor %}
                                     </ul>
                                 {% else %}
-                                    {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
                                     <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
                                         {{ entry.key }}
                                     </a>
                                 {% endif %}
                             </li>
-                        {% endfor %}
+                        {% endfor %}    
+                        
                         <li class="cs-li cs-secretary">Γραμματεία: 210-6994954 - Λ. Κηφισίας  49, Αμπελόκηποι</li>
 
                     </ul>
@@ -175,3 +198,4 @@
         </div>
     </div>
 </header>
+
