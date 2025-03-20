@@ -15,6 +15,8 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
 
+    <script defer src="/assets/js/slider.js"></script>
+
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer>
@@ -78,236 +80,118 @@ eleventyNavigation:
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-1">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://img.freepik.com/free-photo/beautiful-naked-young-woman-with-perfect-clean-skin-smiling-touching-hair-white-wall-facial-treatment_176420-13992.jpg?t=st=1741685114~exp=1741688714~hmac=5e9c9929d69b49e965232c333d48cd3c79e0c6dc154a2948710aca303e343f99&w=2000">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://img.freepik.com/free-photo/beautiful-naked-young-woman-with-perfect-clean-skin-smiling-touching-hair-white-wall-facial-treatment_176420-13992.jpg?t=st=1741685114~exp=1741688714~hmac=5e9c9929d69b49e965232c333d48cd3c79e0c6dc154a2948710aca303e343f99&w=2000">
+                <img loading="lazy" decoding="async" src="https://img.freepik.com/free-photo/beautiful-naked-young-woman-with-perfect-clean-skin-smiling-touching-hair-white-wall-facial-treatment_176420-13992.jpg?t=st=1741685114~exp=1741688714~hmac=5e9c9929d69b49e965232c333d48cd3c79e0c6dc154a2948710aca303e343f99&w=2000" alt="room" width="960" height="796">
+            </picture>
+            <div class="cs-content">
+                <h1 class="cs-title">Πλαστική Χειρουργική & Αισθητική Ιατρική, Αθήνα </h1>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+                        Tο λίφτινγκ αποτελεί μία από τις πιο δραστικές  θεραπείες κατά της χαλάρωσης του προσώπου  που ολοκληρώνεται σε λίγες ώρες 
+                        και μπορεί να προσφέρει αποτέλεσμα που διαρκεί στο χρόνο.                    
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
+                <a href="" class="cs-button-solid">Κλείστε ραντεβού
+                    <img src="/assets/svgs/right-arrow.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+    
                 </a>
             </div>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                   Services                   -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="services-1">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+            <div class="cs-content">
+                <h2 class="cs-title">Οι υπηρεσίες μας</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession.
                 </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
-        </div>
-    </section>
 
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/lift.png">
+                            <source media="(min-width: 601px)" srcset="/assets/images/lift.png">
+                            <img loading="lazy" decoding="async" src="/assets/images/lift.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Macs Lift 1 </h3>
+                        <p class="cs-item-text">
+                            Bασίζεται στη  στήριξη των μαλακών μορίων του προσώπου από σταθερό σημείο, με  αποτέλεσμα ένα πιο φυσικό και λιγότερο επεμβατικό αποτέλεσμα. Στόχος της τεχνικής αυτής είναι η ανόρθωση και νεαροποίηση του προσώπου και του  λαιμού, χωρίς να ασκείται υπερβολική τάση στο δέρμα.                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/macs.png">
+                            <source media="(min-width: 601px)" srcset="/assets/images/macs.png">
+                            <img loading="lazy" decoding="async" src="/assets/images/macs.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Macs Lift 2</h3>
+                        <p class="cs-item-text">
+                            Bασίζεται στη  στήριξη των μαλακών μορίων του προσώπου από σταθερό σημείο, με  αποτέλεσμα ένα πιο φυσικό και λιγότερο επεμβατικό αποτέλεσμα. Στόχος της τεχνικής αυτής είναι η ανόρθωση και νεαροποίηση του προσώπου και του  λαιμού, χωρίς να ασκείται υπερβολική τάση στο δέρμα.
+                                                </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/smallcut.png">
+                            <source media="(min-width: 601px)" srcset="/assets/images/smallcut.png">
+                            <img loading="lazy" decoding="async" src="/assets/images/smallcut.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Λίφτινγκ Μικρών Τομών</h3>
+                        <p class="cs-item-text">
+                            Bασίζεται στη  στήριξη των μαλακών μορίων του προσώπου από σταθερό σημείο, με  αποτέλεσμα ένα πιο φυσικό και λιγότερο επεμβατικό αποτέλεσμα. Στόχος της τεχνικής αυτής είναι η ανόρθωση και νεαροποίηση του προσώπου και του  λαιμού, χωρίς να ασκείται υπερβολική τάση στο δέρμα.
+                         </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/smallcut.png">
+                            <source media="(min-width: 601px)" srcset="/assets/images/smallcut.png">
+                            <img loading="lazy" decoding="async" src="/assets/images/smallcut.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Λίφτινγκ Μικρών Τομών</h3>
+                        <p class="cs-item-text">
+                            Bασίζεται στη  στήριξη των μαλακών μορίων του προσώπου από σταθερό σημείο, με  αποτέλεσμα ένα πιο φυσικό και λιγότερο επεμβατικό αποτέλεσμα. Στόχος της τεχνικής αυτής είναι η ανόρθωση και νεαροποίηση του προσώπου και του  λαιμού, χωρίς να ασκείται υπερβολική τάση στο δέρμα.
+                         </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <source media="(max-width: 600px)" srcset="/assets/images/smallcut.png">
+                            <source media="(min-width: 601px)" srcset="/assets/images/smallcut.png">
+                            <img loading="lazy" decoding="async" src="/assets/images/smallcut.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">Λίφτινγκ Μικρών Τομών</h3>
+                        <p class="cs-item-text">
+                            Bασίζεται στη  στήριξη των μαλακών μορίων του προσώπου από σταθερό σημείο, με  αποτέλεσμα ένα πιο φυσικό και λιγότερο επεμβατικό αποτέλεσμα. Στόχος της τεχνικής αυτής είναι η ανόρθωση και νεαροποίηση του προσώπου και του  λαιμού, χωρίς να ασκείται υπερβολική τάση στο δέρμα.
+                         </p>
+                    </a>
+                </li>
+            </ul>
+            <!-- Scroll Right Button -->
+                    <!-- Scroll Left Button -->
+            <div class="cs-scroll-buttons">
+                <button class="cs-scroll-left" aria-label="Scroll Left">&lt;</button>
+                <button class="cs-scroll-right" aria-label="Scroll Right">&gt;</button>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+            <a href="" class="cs-button-solid">Κλείστε ραντεβού
+                <img src="/assets/svgs/right-arrow.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+            </a>
         </div>
     </section>
 
@@ -315,74 +199,125 @@ eleventyNavigation:
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <section id="reviews-1">
         <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+            <!-- Left section -->
+            <div class="cs-card">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pro.png">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pro.png">
+                    <img loading="lazy" decoding="async" src="/assets/images/pro.png" alt="man at dentist" width="328" height="200" aria-hidden="true">
+                </picture>
+                <div class="cs-content">
+                    <!-- <span class="cs-topper">100% ΦΥΣΙΚΟ ΑΠΟΤΕΛΕΣΜΑ </span> -->
+                    <h2 class="cs-title">Λίφτινγκ προσαρμοσμένο στις αναλογίες του προσώπου σας</h2>
+                    <p class="cs-text">
+                        Οι χειρουργικές τεχνικές που χρησιμοποιούμε έχουν σχεδιαστεί έτσι ώστε να αποφεύγεται το υπερβολικό τέντωμα του δέρματος και η "τραβηγμένη" εμφάνιση, εξασφαλίζοντας ότι το πρόσωπό σας θα δείχνει νεότερο και ανανεωμένο χωρίς να χάσει τη φυσικότητά του. Επιπλέον, κάθε επέμβαση εξατομικεύεται στις ανάγκες και τα χαρακτηριστικά του κάθε ατόμου, προκειμένου να επιτευχθεί το πιο αρμονικό και φυσικό αποτέλεσμα.
                     </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+                    <a href="" class="cs-button-solid">Κλείστε ραντεβού
+                        <img src="/assets/svgs/right-arrow.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+            </div>
+            <!-- Right Section -->
+            <div class="cs-review">
+                <img class="cs-review-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="5 stars" width="112" height="20">
+                <h3 class="cs-title">Τι λένε για εμάς</h3>
+                <p class="cs-text">
+                    "Στην αρχή ήμουν πολύ διστακτική να προχωρήσω σε κάτι τόσο δραστικό. Ο φόβος μιας επέμβασης με ότι αυτό συνεπάγεται με έκαναν πίσω. Η εμπιστοσύνη στο γιατρό είναι κάτι που χτίζεται και αυτό συνέβη σε μένα. Ένιωσα ασφαλής όταν πείστηκα ότι βρίσκομαι στο σωστό μέρος και οι απαντήσεις στα ερωτήματά μου ήταν ειλικρινείς. Το χρονοδιάγραμμα που μου έδωσαν τηρήθηκε με συνέπεια και η αποθεραπεία μου δεν θα μπορούσε να είναι πιο ομαλή. Ο γιατρός με την ομάδα του με αντιμετώπισαν με επαγγελματισμό και προσωπικό ενδιαφέρον. Η όποια μικρή ταλαιπωρία άξιζε όσο τίποτα βλέποντας τον εαυτό μου στον καθρέφτη δεκαπέντε χρόνια νεότερη! Σε ευχαριστώ πολύ γιατρέ μου!"                </p>
+                <span class="cs-review-name">⎯ Μαρία, 52 ετών </span>
+            </div>
+        </div>
+    </section>  
+
+    <!-- ============================================ -->
+    <!--              The plastic surgeon              -->
+    <!-- ============================================ -->
+
+    <section id="surgeon-1">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/drfloros.png">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/drfloros.png">
+                <img loading="lazy" decoding="async" src="/assets/images/drfloros.png" alt="room" width="960" height="796">
+            </picture>
+            <div class="cs-content">
+                <h2 class="cs-title">Ο πλαστικός χειρουργός: Δρ. Κωνσταντίνος Φλώρος</h2>
+                <p class="cs-text">
+                    Ο Δρ. Κωνσταντίνος Φλώρος γεννήθηκε στην Αθήνα, σπούδασε Ιατρική στο Πανεπιστήμιο της Θεσσαλονίκης και ειδικεύτηκε στην  Πλαστική Χειρουργική στο Ηνωμένο Βασίλειο. Συμμετείχε σε εξειδικευμένα σεμινάρια αισθητικής  χειρουργικής στο Λονδίνο και τη Νέα Υόρκη. Στην Ελλάδα ασκεί ιδιωτικό  επάγγελμα με έμφαση στην αισθητική πλαστική χειρουργική και τις  σύγχρονες εφαρμογές της κοσμητικής Ιατρικής και αντιγήρανσης. Διετέλεσε  επιμελητής Πλαστικής Χειρουργικής στα πανεπιστημιακά νοσοκομεία Queen Mary’s University Hospital του Λονδίνου και Addenbrooke’s Hospital στο Κέιμπριτζ.                
+                </p>
+                <a href="" class="cs-button-solid">Κλείστε ραντεβού
+                    <img src="/assets/svgs/right-arrow.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-1">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Συχνές ερωτήσεις</h2>
+            </div>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Πότε αφαιρούνται τα ράμματα;
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Some cleaning plans require a minimum commitment term. Cancelling your plan before the minimum term is complete will result in a $99 fee. If you want to learn more information about how to cancel, please inbox us.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Πόσο επίπονη είναι η διαδικασία;                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Πότε μπορώ να επιστρέψω στην εργασία μου;                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Θα φαίνεται η ουλή;
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What are your prices for brake replacement?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+                    
 
     {% include 'components/cta.html' %}
 {% endblock %}

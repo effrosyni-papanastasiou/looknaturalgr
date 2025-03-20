@@ -226,35 +226,6 @@
   body.cs-open {
     overflow: hidden;
   }
-  .toggle-el {
-    display: none;
-    width: 100%;
-    background: var(--secondary);
-    transition: all 0.2s ease;
-  }
-  input[type="checkbox"].hide-input:checked + .toggle-el {
-    display: none;
-    height: 0;
-    opacity: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  input.hide-input {
-    position: fixed;
-    left: -999em;
-  }
-  label.toggle {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    text-align: center;
-    display: none;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    border-radius: 3px;
-    user-select: none;
-  }
   #cs-top-bar {
     z-index: 100001;
     background-color: var(--white);
@@ -294,6 +265,9 @@
     object-position: center;
   }
   #cs-top-bar .cs-button-solid {
+    display: none;
+  }
+  #cs-nav-bar {
     display: none;
   }
   #cs-navigation {
@@ -795,48 +769,17 @@
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  .cs-mobile {
-    display: none;
-  }
-  /* Initially hidden */
-  .toggle-el {
-    overflow: hidden;
-    height: 0;
-    width: 100%;
-    background: var(--secondary);
-    transition: all 1s ease;
-    opacity: 0;
-  }
-  input[type="checkbox"].hide-input:checked + .toggle-el {
-    height: auto;
-    opacity: 1;
-  }
-  input.hide-input {
-    position: fixed;
-    left: -999em;
-  }
-  label.toggle {
-    transition: all 1s ease;
-    opacity: 1;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    text-align: center;
-    display: inline-block;
-    cursor: pointer;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    border-radius: 3px;
-    user-select: none;
-  }
   #cs-top-bar {
-    z-index: -1;
+    z-index: 10000;
     background-color: var(--white);
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 1rem 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #cs-top-bar .cs-nav {
+    display: none;
   }
   #cs-top-bar .cs-container {
     display: flex;
@@ -875,6 +818,9 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
     object-position: center;
+  }
+  #cs-nav-bar {
+    display: none;
   }
   #cs-navigation {
     z-index: 10000;
